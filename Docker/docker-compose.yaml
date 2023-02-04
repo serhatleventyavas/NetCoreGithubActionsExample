@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  demoApi:
+    container_name: demo-api
+    restart: unless-stopped
+    build: 
+      dockerfile: Docker/Dockerfile
+      context: ..
+      args:
+        - VERSION=1.0.0
+    ports:
+      - 5000:5000
+    image: serhatleventyavas/demo-api:1.0.0
