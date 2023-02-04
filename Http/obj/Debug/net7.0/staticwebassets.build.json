@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "eIGK4tbYduW+DomdeqRsPzX6ETb5cRJICfE462FdyuY=",
+  "Source": "Http",
+  "BasePath": "_content/Http",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
