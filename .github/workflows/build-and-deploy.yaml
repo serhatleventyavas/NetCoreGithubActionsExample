@@ -26,6 +26,9 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
+        name: Set Release Version
+        run: echo "RELEASE_VERSION=${{ github.sha }}" >> $GITHUB_ENV
+      -
         name: Build
         run: docker compose build
       -
