@@ -33,6 +33,7 @@ jobs:
         run: docker compose push
   deploy:
     name: Deploy docker image to server
+    needs: [build]
     runs-on: [self-hosted, buildRunner]
     defaults:
       run:
